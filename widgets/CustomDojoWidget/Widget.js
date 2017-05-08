@@ -38,6 +38,7 @@ function(declare, BaseWidget, Stateful, html, lang) {
           this.map.setLevel(value);
         }
       }));
+      
       this.map.on("zoom-end", (e) => {
         this.viewModel.set("zoomLevel", e.level);
       });
